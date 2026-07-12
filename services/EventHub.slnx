@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/Gateway/">
+    <Project Path="Gateway/EventHub.Gateway.csproj" />
+  </Folder>
+</Solution>

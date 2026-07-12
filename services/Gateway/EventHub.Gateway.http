@@ -1,0 +1,6 @@
+@EventHub.Gateway_HostAddress = http://localhost:5206
+
+GET {{EventHub.Gateway_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
