@@ -1,6 +1,6 @@
 import type { Event } from '~/types'
 
-export const events: Event[] = [
+export const mockEvents: Event[] = [
   {
     id: '1',
     title: 'Nuxt Nation Conf',
