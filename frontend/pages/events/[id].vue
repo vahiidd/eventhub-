@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import type { Event } from '~/types'
 
+const config = useRuntimeConfig()
 const route = useRoute()
-const { data: eventItem, error } = await useFetch<Event>(`/api/events/${route.params.id}`)
+const { data: eventItem, error } = await useFetch<Event>(
+  `${config.public.eventServiceUrl}/api/events/${route.params.id}`
+)
 </script>
 
 <template>

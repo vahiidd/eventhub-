@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import type { Event } from '~/types'
+import type { Event, PagedResult } from '~/types'
 
-const { data: events, pending, error } = await useFetch<Event[]>('/api/events')
+const config = useRuntimeConfig()
+const { data, pending, error } = await useFetch<PagedResult<Event>>(
+  `${config.public.eventServiceUrl}/api/events`
+)
+const events = computed(() => data.value?.items ?? [])
 </script>
 
 <template>
