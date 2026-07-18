@@ -1,4 +1,17 @@
 <Solution>
+  <Folder Name="/Event.Service/" />
+  <Folder Name="/Event.Service/Api/">
+    <Project Path="Event.Service/Api/EventHub.Event.Api.csproj" />
+  </Folder>
+  <Folder Name="/Event.Service/Application/">
+    <Project Path="Event.Service/Application/EventHub.Event.Application.csproj" />
+  </Folder>
+  <Folder Name="/Event.Service/Domain/">
+    <Project Path="Event.Service/Domain/EventHub.Event.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Event.Service/Infrastructure/">
+    <Project Path="Event.Service/Infrastructure/EventHub.Event.Infrastructure.csproj" />
+  </Folder>
   <Folder Name="/Gateway/">
     <Project Path="Gateway/EventHub.Gateway.csproj" />
   </Folder>
